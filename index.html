@@ -6,11 +6,36 @@
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
   <title>Formularios</title>
 </head>
 
 <body>
+  <section class='container'>
+    <form class='form'>
+      <div class="form-group">
+        <label for="fruit">Escribe una fruta</label>
+        <input type="text" id='fruit' class='input-fruit'>
+      </div>
+      <div class="form-group">
+        <label for="red">Rojo</label>
+        <input type="radio" name='color' id='red' value='red' selected>
 
+        <label for="amarillo">amarillo</label>
+        <input type="radio" name='color' id='amarillo' value='yellow'>
+
+        <label for="verde">Verde</label>
+        <input type="radio" name='color' id='verde' value='green'>
+
+      </div>
+      <div class="form-group">
+        <button id='newFruit' class='btn'>Entrar fruta</button>
+      </div>
+      <div id="output" class="output"></div>
+    </form>
+  </section>
+
+  <script src='js/main.js'></script>
 </body>
 
 </html>
